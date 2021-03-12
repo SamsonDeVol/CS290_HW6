@@ -1,0 +1,33 @@
+
+<form>
+  <fieldset>
+	<Legend>Add Exercise:</legend>
+	<div>
+	  <label for="name">Name:</label>
+      <input type="text" name="name" id="addname" >
+	</div>
+    <div>
+	  <label for="date">Date:</label>
+      <input type="date" name="date" id="adddate" >
+	</div>
+    <div>
+	  <label for="reps">Reps:</label>
+      <input type="number" name="reps" id="addreps" >
+	</div>
+    <div>
+	  <label for="weight">Weight:</label>
+      <input type="number" name="weight" id="addweight" >
+	</div>
+    <div>
+	  <label for="unit">Units:</label>
+      <input id="addunit" type="radio" name="unit" value="1" checked>lbs</input>
+      <input type="radio" name="unit" value="0">kgs</input>
+	</div>
+    <input id="addexercise" type="submit" value="Submit">
+  </fieldset>
+</form>
+
+<h1>Exercises:</h1>
+<div id="completedtable"></div>
+
+<script src="clientside.js"></script>
